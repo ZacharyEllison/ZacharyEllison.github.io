@@ -21,7 +21,7 @@ This is the homepage for my portfolio and blog.
  #### Theme
  
  Though I plan to create my own theme, at present I am using [Moon by Taylin Tatli][moon link]. 
- I am using the config.yml file to access this theme remotely instead of forking the original. 
+ I have forked the original but plan to incrementally change everything. 
  This is in hopes to make me learn more about it all.
  
  
