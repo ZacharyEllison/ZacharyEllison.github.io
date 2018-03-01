@@ -6,7 +6,7 @@ description:        "This is Zachary's first attempt at a blog, portfolio, and p
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/sun_B&W.png'
-background:         'assets/img/night-sky.jpg'
+background:         'assets/img/night-sky-2008247_1920.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                zellison.me
