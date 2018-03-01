@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## Zachary Ellison Homepage
 
-You can use the [editor on GitHub](https://github.com/ZacharyEllison/ZacharyEllison.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is the homepage for my portfolio and blog.  
+  This is the very beginning of the project, and there isn't a clear trajectory as of yet where this will go.
+  
+### Goals
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ZacharyEllison/ZacharyEllison.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  * Blog to follow progress along
+    * FreeCodeCamp
+    * Udemy Web Developer Bootcamp
+    * CS121 Self study background course
+    * Javascript 30
+    * Other programs like one for C, etc.
+  * Portfolio for projects I will build
+    * _likely removing the two games that are presently in my repos_
+  * Resume to present to potential employers
+  * Design my own theme for the site
+    * Figuring out exactly what Github Pages can and can't do for hosting
+    * Designing a single column and fresh personal site
+    
+ #### Theme
+ 
+ Though I plan to create my own theme, at present I am using [Moon by Taylin Tatli][moon link]. 
+ I am using the config.yml file to access this theme remotely instead of forking the original. 
+ This is in hopes to make me learn more about it all.
+ 
+ 
+ #### Contact
+ 
+ Feel free to contact me by email: zach.r.ellison @ gmail.com  
+ Eventually I'll get (_or rather use what I already have_) social media like twitter but I can't be bothered right now.
+ 
+ 
+ 
+ [moon link]: https://github.com/TaylanTatli/Moon
+  
