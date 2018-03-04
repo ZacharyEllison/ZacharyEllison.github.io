@@ -4,7 +4,7 @@ title: "First Post of the Moon Era"
 date: 2018-03-03
 excerpt: "Or how I gave up on giving up and gave in to giving in, a story of accountability"
 tags: [intro post, test, plans]
-feature: https://cdn.pixabay.com/photo/2018/02/19/19/16/door-3165944_960_720.jpg
+feature: assets/images/door.jpg
 comments: true
 ---
 
