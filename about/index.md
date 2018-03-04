@@ -6,7 +6,7 @@ date: 2018-03-03
 comments: false
 ---
     
-<center><b>[Zachary Ellison](zellison.me)</b></a> 
+<center>*[Zachary Ellison](zellison.me)* 
 is a minimalist with as many things as possible, often sporadic but focused in his sporadicism, father of one. He is also a sophomore in college, and a self-starter. He even got out of bed this morning.</center>
 
 ## Features
