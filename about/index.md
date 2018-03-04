@@ -6,7 +6,9 @@ date: 2018-03-03
 comments: false
 ---
 #### [Zachary Ellison](zellison.me)
-<center>is a minimalistic (with as many things as possible), attentive (deficit with an empahsis on disorder), father of one. He is also a sophomore in college, and a self-starter. He even got out of bed this morning. Once out of bed, he conitnued on his path of being a father, a student at Harvard University, and working his way to being a creator of things he enjoys.</center>
+<center>is a minimalistic (with as many things as possible), attentive (deficit with an empahsis on disorder), father of one. He is also a sophomore in college, and a self-starter. He even got out of bed this morning.  
+    
+   Once out of bed, he conitnued on his path of being a father, a student at Harvard University, and working his way to being a creator of things he enjoys.</center>
 
 ## Features
 * Studies Computer Science
