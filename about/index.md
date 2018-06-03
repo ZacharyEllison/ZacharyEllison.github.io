@@ -5,8 +5,15 @@ tags: [about, Zachary, family]
 date: 2018-03-03
 comments: false
 ---
+<<<<<<< HEAD
 ## [Zachary Ellison](zacharyellison.com)
 <center>is a minimalistic (with too many things), attentive (deficit disorder), father of one; a rising junior at Harvard University; and a self-starter. He even got out of bed this morning. Once out of bed, he conitnued on his path of fatherhood, learning, and becoming a creator of things he enjoys.</center>
+=======
+#### [Zachary Ellison](zellison.me)
+<center>is a minimalistic (with as many things as possible), attentive (deficit with an empahsis on disorder), father of one. He is also a sophomore in college, and a self-starter. He even got out of bed this morning.  
+    
+   Once out of bed, he conitnued on his path of being a father, a student at Harvard University, and working his way to being a creator of things he enjoys.</center>
+>>>>>>> 3564b426964f2057ecbeaec4366219675b45bd83
 
 ## Key Attributes
 * Studies Computer Science
