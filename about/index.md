@@ -1,18 +1,18 @@
 ---
 layout: page
-title: About the Theme
+title: About the man
 tags: [about, Zachary, family]
 date: 2018-03-03
 comments: false
 ---
-#### [Zachary Ellison](zellison.me)
-<center>is a minimalistic (with as many things as possible), attentive (deficit with an empahsis on disorder), father of one. He is also a sophomore in college, and a self-starter. He even got out of bed this morning. Once out of bed, he conitnued on his path of being a father, a student at Harvard University, and working his way to being a creator of things he enjoys.</center>
+## [Zachary Ellison](zacharyellison.com)
+<center>is a minimalistic (with too many things), attentive (deficit disorder), father of one; a rising junior at Harvard University; and a self-starter. He even got out of bed this morning. Once out of bed, he conitnued on his path of fatherhood, learning, and becoming a creator of things he enjoys.</center>
 
-## Features
+## Key Attributes
 * Studies Computer Science
 * Responsive
 * Often awake
-* Able to go on tangents about Nietzsche or philosophy
+* Able to go on tangents about Nietzsche and philosophy
 * Cooks a mean Tuna Noodle Casserole
 
 ## Preview
@@ -21,7 +21,7 @@ comments: false
     https://scontent.fbed1-2.fna.fbcdn.net/v/t31.0-8/1556284_687475197989875_8195844182626317599_o.jpg?oh=757d375ebfac64fc33f91dd3ef3e66ca&oe=5B3C73DE
     http://willyou.liveyourlifewith.me/static/images/Family%20with%20Uke.jpg
 {% endcapture %}
-{% include gallery images=images caption="Zach in action" cols=2 %}
+{% include gallery images=images caption="Zachary in action with family" cols=2 %}
 
 See a live version of Zachary if you're ever on Harvard Campus or in the northern reaches of Colorado and happen to be at Zachary's house.
 
