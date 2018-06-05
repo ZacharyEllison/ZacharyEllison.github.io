@@ -19,7 +19,7 @@ comments: false
 
 {% capture images %}
     /assets/images/zachary_with_rae_1.JPG
-    http://willyou.liveyourlifewith.me/static/images/Family%20with%20Uke.jpg
+    /assets/images/Zach_alone.JPG
 {% endcapture %}
 {% include gallery images=images caption="Zachary in action with family" cols=2 %}
 
