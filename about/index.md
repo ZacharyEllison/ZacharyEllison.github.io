@@ -27,4 +27,4 @@ See a live version of Zachary if you're ever on Harvard Campus or in the norther
 
 ## Getting Started
 
-This site is just getting started so there hasn't been much to populate it yet. It uses the [Moon Theme](http://taylantatli.github.io/Moon/) which I find to enjoy most of the themes I found. I will be building my own in its image to be exactly the theme I want. This site will be a marker of my progress and keep me accountable.
+This site is just getting started so there hasn't been much to populate it yet. It uses the [Moon Theme](http://taylantatli.github.io/Moon/) which I enjoy most of the themes I found. I will be building my own in its image to be exactly the theme I want. This site will be a marker of my progress and keep me accountable.
