@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.2.1"
-gem "jekyll-sitemap"
+gem "jekyll"
+gem "webrick"
+gem "jekyll-feed"
 gem "jekyll-gist"
-gem 'jekyll-mentions'
-gem 'jekyll-feed'
+gem "jekyll-paginate-v2"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"

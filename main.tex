@@ -1,0 +1,224 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Zachary Ellison} \\ \vspace{1pt}
+    \small 720-333-0012 $|$ \href{mailto:zach.r.ellison@gmail.com.com}{\underline{zach.r.ellison@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/zachary-ellison}{\underline{LinkedIn}} $|$
+    \href{https://github.com/zacharyellison}{\underline{Github}} $|$
+    \href{https://calendly.com/zach-r-ellison/intro-call}{\underline{Calendly}}
+\end{center}
+
+
+%-----------Objective-----------
+\section{Objective} \vspace{1pt}
+% \begin{center}
+%     hello
+% \end{center}
+Python Backend Developer with a strong background in data-driven applications, cloud infrastructure, and software engineering. Experienced in optimizing database performance, automating processes, and implementing modern coding practices.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harvard University}{Cambridge, MA}
+      {Bachelor of Arts in Computer Science}{2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Sep 2022 -- Present}
+      {Notable Health}{Remote in San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Automated prior authorizations with 85\% success rates}
+        \resumeItem{Integrated web payor portals and external tooling to ingest and export patient data}
+        \resumeItem{Updated coding practices, reducing clutter and duplication by 50\%}
+        \resumeItem{\textbf{Tech}: Google Cloud Platform, Typescript, Selenium, Python, Jenkins, Concourse, SQL, Docker, Jest}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer}{Jan 2022 -- Aug 2022}
+      {Zagaran Inc}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Optimized Database ingestion and queries, improving algorithm performance by 300\%}
+        \resumeItem{Agile workflows involving with multiple teams}
+        \resumeItem{Rebuilt legacy code for Web app with React and Django}
+        \resumeItem{\textbf{Tech}: Django, Python3, Numpy, Postgres, Pandas, Angular, React, VueJS, Node.JS, AWS}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer in Test}{Mar 2021 -- Jan 2022}
+      {EzeSoft}{Remote in Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Spearheaded K8s performance testing framework, presenting to peers and reports}
+        \resumeItem{Integrated data architecture framework as source of truth for TDD}
+        \resumeItem{Lead development on integration and unit tests, gathering requirements with documentation}
+        \resumeItem{Maintained back-end cloud infrastructure and data architecture within AWS with 24hr on-call life-cycle}
+        \resumeItem{\textbf{Tech}: C\#, Node.JS, Jest, Jenkins, Jira, K8s, Informatica, C++, Tableau, AWS, SSAS}
+      \resumeItemListEnd
+ 
+    \resumeSubheading
+      {Data Scientist}{Sep 2018 -- Sep 2019}
+      {Activision Publishing}{Boulder, CO}
+      \resumeItemListStart
+        \resumeItem{Presented to VPs on user engagement}
+        \resumeItem{Managed data warehouse and rebuilt data ETL pipeline for 18 million posts}
+        \resumeItem{Performed sentiment analysis on 600k users with live data, visualizing BI results}
+        \resumeItem{Developed internal web app using React, Python, and Flask}
+        \resumeItem{Learned to manage multithreaded work and python Celery workers with Redis}
+        \resumeItem{\textbf{Tech}: Python, Kafka, React, Celery, Redis, Spark, Kubernetes, Docker, AWS, MongoDB, SQL, Snowflake}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      % \resumeProjectHeading
+      %     {\textbf{Budget} $|$ \emph{JavaScript, Oracle Cloud} $|$ \href{https://budget.zacharyellison.com}{\underline{budget.ZacharyEllison.com}}}{Spring 2021}
+      % \resumeProjectHeading
+      %     {\textbf{Wiki} $|$ \emph{Python, Git, Oracle Cloud} $|$ \href{https://wiki.zacharyellison.com}{\underline{wiki.ZacharyEllison.com}}}{Summer 2020}
+      \resumeProjectHeading
+          {\href{https://github.com/ZacharyEllison/portfolio}{\underline{\textbf{Portfolio}}} $|$ \emph{React, GatsbyJS, Zeit} $|$ \href{https://zacharyellison.com}{\underline{ZacharyEllison.com}}}{Fall 2019}
+
+      \resumeProjectHeading
+          {\href{https://github.com/ZacharyEllison/matrices}{\underline{\textbf{Matrices}}} $|$ \emph{Python, Linear Algebra}} {Spring 2018}
+          
+      \resumeProjectHeading
+      {\href{https://github.com/ZacharyEllison/lylwm}{\underline{\textbf{Simple Cloud Storage}}} $|$ \emph{Python, Flask, MongoDB, Heroku, Oracle}}{Winter 2017}
+      
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, Java, SQL, JavaScript, Typescript, HTML/CSS, Lua, OCamL, LaTeX, Bash} \\
+     \textbf{Databases}{: Postgres, MSSQL, MySQL, Redshift, MongoDB, Elasticsearch} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, Django, Jest, Material-UI, FastAPI, Selenium} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, CircleCI, Google Cloud Platform, Kubernetes, AWS, S3, IAM, Azure} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, D3.js, SciPy, boto3, moment.js} \\
+     \textbf{Interests}{: Reading short stories, going on long runs, baking sourdough}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
