@@ -2,10 +2,11 @@
 layout: post
 title: "First Post of the Moon Era"
 date: 2018-03-03
-excerpt: "Or how I gave up on giving up and gave in to giving in, a story of accountability"
+lead: "Or how I gave up on giving up and gave in to giving in, a failed story of accountability"
 tags: [intro post, test, plans]
 feature: assets/images/door.jpg
 comments: true
+# archive: true
 ---
 
 ## Welcome, come on in
