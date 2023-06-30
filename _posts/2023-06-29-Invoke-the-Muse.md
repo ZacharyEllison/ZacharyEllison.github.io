@@ -9,8 +9,8 @@ project: true
 # -   poetry
 # -   discard
 ---
-# Invoke the Muse
 
+![Johannes, Lucas van Doetecum - Farm](/assets/images/Doetecum-Farm.jpg){: width="250" }
 
 *Speak to me*\
 *Bring forth the image you sought*\
