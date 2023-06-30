@@ -4,7 +4,7 @@ title: Zachary Ellison
 description: An online CV and a place to publish my writing, to appease my inner spirits
 taglong: Putting words places
 tagshort: scholar, father, fixer 
-url: zacharyellison.github.io
+# url: zacharyellison.com
 baseurl: ""
 permalink: pretty
 repo: https://github.com/zacharyellison/zacharyellison.github.io
