@@ -4,13 +4,14 @@ title: "Invoke the Muse"
 date: 2023-06-29
 lead: "Short Verse from 2021"
 project: true
+feature: /assets/images/Doetecum-Farm.jpg
 # tag:
 # -   writing
 # -   poetry
 # -   discard
 ---
 
-![Johannes, Lucas van Doetecum - Farm](/assets/images/Doetecum-Farm.jpg){: width="100%" }
+<!-- ![Johannes, Lucas van Doetecum - Farm](/assets/images/Doetecum-Farm.jpg){: width="100%" } -->
 <sub>_Farm, from The Small Landscapes_, Johannes and Lucas van Doetecum: The Metropolitan Museum of Art, New York, [The Met Open Access](www.metmuseum.org)</sub>
 
 *Speak to me*\
