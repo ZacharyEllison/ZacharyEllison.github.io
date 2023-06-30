@@ -20,4 +20,6 @@ I am rebuilding this site _again_ since I stopped in 2018, using the [cvless](ht
 
 This time, the difference is in the soul purpose. Before, I thought I needed to. Now, I **want** to. I plan to use this platform for presenting things I write.
 
+___
+
 {% include archive.html %}
