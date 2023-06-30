@@ -4,7 +4,7 @@ title: "Invoke the Muse"
 date: 2023-06-29
 lead: "Short Verse from 2021"
 project: true
-feature: /assets/images/Doetecum-Farm.jpg
+feature: assets/images/Doetecum-Farm.jpg
 # tag:
 # -   writing
 # -   poetry
