@@ -10,7 +10,7 @@ project: true
 # -   discard
 ---
 
-![Johannes, Lucas van Doetecum - Farm](/assets/images/Doetecum-Farm.jpg){: width="250" }
+![Johannes, Lucas van Doetecum - Farm](/assets/images/Doetecum-Farm.jpg){: width="75%" }
 
 *Speak to me*\
 *Bring forth the image you sought*\
