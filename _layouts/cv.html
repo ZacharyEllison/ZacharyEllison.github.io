@@ -1,11 +1,290 @@
----
-layout: default
----
-
-<article id="cv">
-  {% include header.html %}
-  <main>
-    {{ content }}
-  </main>
-  {% include footer.html %}
-</article>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>main</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="center">
+<p><strong><span class="smallcaps">Zachary Ellison</span></strong><br />
+<a href="https://zacharyellison.com"><u>Bio</u></a> <span class="math inline">|</span> <a href="https://linkedin.com/in/zachary-ellison"><u>LinkedIn</u></a> <span class="math inline">|</span> <a href="https://github.com/zacharyellison"><u>Github</u></a> <span class="math inline">|</span> <a href="https://calendly.com/zach-r-ellison/intro-call"><u>Schedule</u></a> <span class="math inline">|</span> <a href="mailto:zach.r.ellison@gmail.com.com"><u>zach.r.ellison@gmail.com</u></a></p>
+</div>
+<h1 id="section"></h1>
+<p>I am a father, a fixer, a tinkerer. I create things that bring me joy. I try to be of help to others.</p>
+<p>I like to work with Python, explore data, and tell stories.</p>
+<p>I have experience <em>automating, analyzing,</em> and <em>optimizing</em>.</p>
+<h1 id="experience">Experience</h1>
+<ul>
+<li><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Software Engineer</strong></td>
+<td style="text-align: right;">September 2022 – Present</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Notable Health</em></td>
+<td style="text-align: right;"><em>Remote, San Francisco, CA</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><span> <span>Led efforts on coding best practices for internal tools and code library use </span> </span></p></li>
+<li><p><span> <span>Onboarded and Managed team of 5 contractors </span> </span></p></li>
+<li><p><span> <span>Mentored peers regarding solutions and code patterns </span> </span></p></li>
+<li><p><span> <span>Integrated web payor portals and external tooling to ingest and export HIPAA data </span> </span></p></li>
+<li><p><span> <span><strong>Tech</strong>: Google Cloud Platform, Typescript, Selenium, Python, Jenkins, Concourse, SQL, Docker, Jest </span> </span></p></li>
+</ul></li>
+<li><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Software Engineer</strong></td>
+<td style="text-align: right;">January 2022 – August 2022</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Zagaran Inc</em></td>
+<td style="text-align: right;"><em>Boston, MA</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><span> <span>Optimized Database ingestion and queries, improving algorithm performance by 300% </span> </span></p></li>
+<li><p><span> <span>Executed code base restructure with React and Django as sole architect </span> </span></p></li>
+<li><p><span> <span><strong>Tech</strong>: Django, Python3, Numpy, Postgres, Pandas, Angular, React, VueJS, Node.JS, AWS </span> </span></p></li>
+</ul></li>
+<li><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Software Engineer in Test</strong></td>
+<td style="text-align: right;">March 2021 – January 2022</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>EzeSoft, SS&amp;C</em></td>
+<td style="text-align: right;"><em>Remote, Boston, MA</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><span> <span>Spearheaded K8s performance testing framework, presenting to peers and reports </span> </span></p></li>
+<li><p><span> <span>Integrated data architecture framework as source of truth for TDD </span> </span></p></li>
+<li><p><span> <span>Led development on integration, unit tests </span> </span></p></li>
+<li><p><span> <span>Gathered business requirements to detail task development, acceptance criteria </span> </span></p></li>
+<li><p><span> <span><strong>Tech</strong>: C#, Node.JS, Jest, Jenkins, Jira, K8s, C++, Tableau, AWS </span> </span></p></li>
+</ul></li>
+<li><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Data Scientist</strong></td>
+<td style="text-align: right;">September 2018 – September 2019</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Activision</em></td>
+<td style="text-align: right;"><em>Boulder, CO</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><span> <span>Presented 2 times on user engagement, sentiment to VPs of Treyarch </span> </span></p></li>
+<li><p><span> <span>Performed sentiment analysis of 600k users on live data </span> </span></p></li>
+<li><p><span> <span>Integrated data lake, ETL pipeline to ingest 18+ million posts with AWS, python, and kafka </span> </span></p></li>
+<li><p><span> <span>Developed internal web tool for user data management using React, Python, Flask </span> </span></p></li>
+<li><p><span> <span>Implemented multithreaded workers with python Celery, Redis </span> </span></p></li>
+<li><p><span> <span><strong>Tech</strong>: Python, Kafka, React, Celery, Redis, Spark, Kubernetes, Docker, AWS, MongoDB, SQL, Snowflake </span> </span></p></li>
+</ul></li>
+</ul>
+<h1 id="education">Education</h1>
+<ul>
+<li><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Harvard University</strong></td>
+<td style="text-align: right;">2021</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Bachelor of Arts in Computer Science</em></td>
+<td style="text-align: right;"><em>Cambridge, MA</em></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h1 id="projects">Projects</h1>
+<ul>
+<li><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/ZacharyEllison/ZacharyEllison.github.io"><u><strong>Portfolio</strong></u></a> <span class="math inline">|</span> <em>Git, Github Pages, Ruby, Jekyll</em> <span class="math inline">|</span> <a href="https://zacharyellison.com"><u>ZacharyEllison.com</u></a></td>
+<td style="text-align: right;">Fall 2019</td>
+</tr>
+</tbody>
+</table></li>
+<li><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/ZacharyEllison/matrices"><u><strong>Matrices</strong></u></a> <span class="math inline">|</span> <em>Python, Linear Algebra</em></td>
+<td style="text-align: right;">Spring 2018</td>
+</tr>
+</tbody>
+</table></li>
+<li><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/ZacharyEllison/lylwm"><u><strong>Simple Cloud Storage</strong></u></a> <span class="math inline">|</span> <em>Python, Flask, MongoDB, Heroku, Oracle</em></td>
+<td style="text-align: right;">Winter 2017</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h1 id="technical-skills">Technical Skills</h1>
+<div class="itemize">
+<p><span> <strong>Languages</strong><span>: Python, C/C++, Java, SQL, JavaScript, Typescript, HTML/CSS, Lua, OCamL, LaTeX, Bash</span><br />
+<strong>Databases</strong><span>: Postgres, MSSQL, MySQL, Redshift, MongoDB, Elasticsearch</span><br />
+<strong>Frameworks</strong><span>: React, Node.js, Flask, JUnit, Django, Jest, Material-UI, FastAPI, Selenium</span><br />
+<strong>Developer Tools</strong><span>: Git, Docker, TravisCI, CircleCI, Google Cloud Platform, Kubernetes, AWS, S3, IAM, Azure</span><br />
+<strong>Libraries</strong><span>: pandas, NumPy, Matplotlib, D3.js, SciPy, boto3, moment.js</span><br />
+<strong>Interests</strong><span>: Reading short stories, going on long runs, baking sourdough</span> </span></p>
+</div>
+</body>
+</html>
