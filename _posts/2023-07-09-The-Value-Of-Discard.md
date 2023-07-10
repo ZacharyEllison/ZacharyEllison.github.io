@@ -15,13 +15,13 @@ tags: [reflection, writing, essay]
 
 When flour and water are left to mingle, wild yeast from the air finds a home. Care for this wild colony, domesticate it, and you bring _rise_ to a powerful ally in the kitchen. A naturally occurring leavening agent for breads, pizzas, doughnuts; you name it!
 
-Sourdough starter has been [used for millennia], in much the same ways as today. With time and care, starter develops recipes into sturdy bakes. 
+Sourdough starter has been [used for millennia](https://en.m.wikipedia.org/wiki/Sourdough), in much the same ways as today. With time and care, starter develops recipes into sturdy bakes. 
 
 ## Feeding the Starter
 
-Each chef cares for their colony in their own way, I’ve even read of people [taking them on walks]. However a baker cares for their kitchens pet, inevitably the colony eats through its supply of long-chain carbohydrates and needs to be fed. You can't just keep putting more flour and water in their home, they would run out of space! Not to mention the byproduct of this wild yeasts feast: ethanol. Ethanol might not kill the yeast, but it certainly doesn't help it live. 
+Each chef cares for their colony in their own way, I’ve even read of people [taking them on walks](https://jewishjournal.com/commentary/opinion/rob_eshman/217620/217620/). However a baker cares for their kitchens pet, inevitably the colony eats through its supply of long-chain carbohydrates and needs to be fed. You can't just keep putting more flour and water in their home, they would run out of space! Not to mention the byproduct of this wild yeasts feast: ethanol. Ethanol might not kill the yeast, but it certainly doesn't help it live. 
 
-The process of feeding the starter begins by discarding. Everyday feeding means half the starter is discarded and its mass replaced by fresh flour and water. There’s no manageable way to separate just the living yeast, so we take just _half_. There will certainly be viable yeast in what is discarded, which is why you can use it for a plethora of recipes like [this one for crackers].
+The process of feeding the starter begins by discarding. Everyday feeding means half the starter is discarded and its mass replaced by fresh flour and water. There’s no manageable way to separate just the living yeast, so we take just _half_. There will certainly be viable yeast in what is discarded, which is why you can use it for a plethora of recipes like [this one for crackers](https://www.kingarthurbaking.com/recipes/sourdough-crackers-recipe).
 
 ## Discard
 
