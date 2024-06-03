@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Construo, or, The Zen of Personal Maintentence"
-date: 2023-06-29
+date: 2024-06-29
 lead: "A reflection from the top of my mind right after the event"
 project: true
 # tag:
