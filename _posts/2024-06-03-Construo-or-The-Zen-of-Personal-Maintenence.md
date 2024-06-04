@@ -10,7 +10,7 @@ project: true
 # -   discard
 ---
 
-![Garnier. Auguste. 34 ans, né à Périgny (Côte-d'Or). Journalier. Anarchiste.](/assets/images/anarchist.jpg){: width="100%" }
+![Garnier. Auguste. 34 ans, né à Périgny (Côte-d'Or). Journalier. Anarchiste.](/assets/images/anarchist.png){: width="100%" }
 <sub>2/3/94.
 Alphonse Bertillon French
 
@@ -27,20 +27,11 @@ tags:: #reflection #Thinking #health
 # Construo
 > The process of building
 
-I am building _me_
-### Zachary Ronald Ellison
-- Father to {redacted}, {redacted}, and {redacted}
-- Partner to {redacted}
-- Son to {redacted} and {redacted}
-- Brother to {redacted} and {redacted}
-- Nephew to {redacted}
-
 I build myself in every day, week, month, year
-I build myself with my actions, my [[Hobbies]]
-I'm planning my [[Everyday Practices]] 
-I have current efforts to be good at money and health
 
-## Important areas
+I build myself with my actions, my [[Hobbies]], my beliefs
+
+## Important areas of Identity
 [[Fatherhood]]
 Relationships
 Learning
@@ -48,7 +39,10 @@ Finances
 Health
 
 ## ___ 
+
 Here we will build our self confidence
+
+
 # Self-Confidence
 
 Self confidence is the concept of being enough, trusting yourself, and knowing what your strengths are.
@@ -75,6 +69,8 @@ But I am confused. And maybe that's because I'm autistic? But ultimately I just 
 - I think it's a good practice of my ability to shrug off criticism and 
 - also my ability to perform under scrutiny.
 - I also think I'm at least a little charming. so the two guys weren't angry and that appeases my anxiety
+
+
 #### Takeaways
 
 I think I could have asked for clarification, but I do shy away from even gentle confrontation
