@@ -11,7 +11,7 @@ project: true
 
 ---
 
-when I was 15 a cousin of mine killed himself, 
+when I was 15 my cousin killed himself, 
 
 I was reading Siddhartha by Hesse 
 
@@ -27,10 +27,13 @@ Something vital, now it’s gone.
 
 My therapist said I needed a foundation. 
 
-I decided I would:
-- keep my promises,
-- have intention,
-- and intend to help.
+I decided I would
+
+keep my promises,
+
+have intention,
+
+intend to help.
 
 I built a person I liked on top. 
 
