@@ -2,8 +2,7 @@
 layout: post
 title:  "Siddhartha (poem)"
 date: 2025-06-28
-lead: "TW: mentions suicide
-"
+lead: "TW: mentions suicide"
 project: true
 # tag:
 # -   writing
