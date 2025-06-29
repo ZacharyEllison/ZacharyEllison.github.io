@@ -2,14 +2,13 @@
 layout: post
 title:  "Siddhartha (poem)"
 date: 2025-06-28
-lead: "TW: mentions suicide"
+lead: "TW: mentions suicide
+"
 project: true
 # tag:
 # -   writing
 # -   poetry
 ---
-
-# Siddhartha 
 
 when I was 15 a cousin of mine killed himself, 
 
