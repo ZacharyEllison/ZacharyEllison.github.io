@@ -1,290 +1,394 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>main</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }} &middot; {{ page.title }}</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
   <style>
+    :root {
+      --cv-page-width: 8.5in;
+      --cv-page-padding: 0.52in;
+      --cv-text: #111111;
+      --cv-muted: #4a4a4a;
+      --cv-border: #111111;
+      --cv-paper: #ffffff;
+      --cv-background: #f4f2ee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
-      color: #1a1a1a;
-      background-color: #fdfdfd;
+      font-size: 11pt;
+      background: var(--cv-background);
+      color: var(--cv-text);
     }
+
     body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      word-wrap: break-word;
+      margin: 0;
+      font-family: "Fira Sans", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.24;
+      -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
-      font-kerning: normal;
     }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 1em;
-      }
-    }
-    @media print {
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
+
     a {
-      color: #1a1a1a;
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.12em;
+      text-decoration-thickness: 0.06em;
     }
-    a:visited {
-      color: #1a1a1a;
+
+    .cv-shell {
+      min-height: 100vh;
+      padding: 1.5rem 1rem 3rem;
     }
-    img {
-      max-width: 100%;
+
+    .cv-actions {
+      width: min(var(--cv-page-width), calc(100vw - 2rem));
+      margin: 0 auto 0.9rem;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.65rem;
+      font-size: 0.88rem;
     }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
+
+    .cv-action {
+      padding: 0.45rem 0.7rem;
+      border: 1px solid rgba(17, 17, 17, 0.2);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--cv-text);
+      text-decoration: none;
+      font: inherit;
+      cursor: pointer;
+      transition: background-color 0.16s ease, border-color 0.16s ease;
     }
-    h5, h6 {
-      font-size: 1em;
+
+    .cv-action:hover,
+    .cv-action:focus-visible {
+      background: #ffffff;
+      border-color: rgba(17, 17, 17, 0.45);
+      outline: none;
+    }
+
+    .cv-page {
+      width: min(var(--cv-page-width), calc(100vw - 2rem));
+      margin: 0 auto;
+      padding: var(--cv-page-padding);
+      background: var(--cv-paper);
+      box-shadow: 0 1.25rem 3rem rgba(17, 17, 17, 0.11);
+    }
+
+    .cv-header {
+      text-align: center;
+      margin-bottom: 0.6rem;
+    }
+
+    .cv-name {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      font-variant-caps: all-small-caps;
+    }
+
+    .cv-contact-row {
+      margin-top: 0.2rem;
+      font-size: 0.92rem;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .cv-contact-row span {
+      display: inline-block;
+      margin: 0 0.18rem;
+    }
+
+    .cv-section {
+      margin-top: 0.62rem;
+    }
+
+    .cv-section-title {
+      margin: 0 0 0.38rem;
+      padding-bottom: 0.14rem;
+      border-bottom: 1px solid var(--cv-border);
+      font-size: 1.04rem;
+      line-height: 1.1;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-variant-caps: all-small-caps;
+    }
+
+    .cv-entry {
+      margin-top: 0.32rem;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .cv-entry-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 0.8rem;
+      align-items: baseline;
+      font-size: 0.97rem;
+    }
+
+    .cv-entry-title,
+    .cv-entry-date {
+      font-weight: 600;
+    }
+
+    .cv-entry-subheader {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 0.8rem;
+      align-items: baseline;
+      margin-top: 0.06rem;
+      font-size: 0.91rem;
+      color: var(--cv-muted);
       font-style: italic;
     }
-    h6 {
-      font-weight: normal;
+
+    .cv-item-list {
+      margin: 0.22rem 0 0 0;
+      padding-left: 1.08rem;
     }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
+
+    .cv-item-list li {
+      margin: 0.11rem 0;
+      font-size: 0.89rem;
     }
-    li > ol, li > ul {
-      margin-top: 0;
+
+    .cv-skills {
+      margin-top: 0.26rem;
+      font-size: 0.9rem;
     }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
+
+    .cv-skill-row + .cv-skill-row {
+      margin-top: 0.16rem;
     }
-    code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      font-size: 85%;
-      margin: 0;
+
+    .cv-skill-label {
+      font-weight: 600;
     }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
+
+    @media (max-width: 720px) {
+      .cv-shell {
+        padding: 1rem 0.75rem 1.5rem;
+      }
+
+      .cv-actions,
+      .cv-page {
+        width: calc(100vw - 1.5rem);
+      }
+
+      .cv-page {
+        padding: 1.1rem 0.95rem;
+      }
+
+      .cv-name {
+        font-size: 1.7rem;
+      }
+
+      .cv-contact-row {
+        white-space: normal;
+      }
+
+      .cv-entry-header,
+      .cv-entry-subheader {
+        grid-template-columns: 1fr;
+        gap: 0.1rem;
+      }
     }
-    pre code {
-      padding: 0;
-      overflow: visible;
+
+    @page {
+      size: letter;
+      margin: 0.5in;
     }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
+
+    @media print {
+      html,
+      body {
+        background: #ffffff;
+      }
+
+      .cv-shell {
+        min-height: auto;
+        padding: 0;
+      }
+
+      .cv-actions {
+        display: none;
+      }
+
+      .cv-page {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      a {
+        text-decoration-thickness: 0.04em;
+      }
     }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
-<div class="center">
-<p><strong><span class="smallcaps">Zachary Ellison</span></strong><br />
-<a href="https://zacharyellison.com"><u>Bio</u></a> <span class="math inline">|</span> <a href="https://linkedin.com/in/zachary-ellison"><u>LinkedIn</u></a> <span class="math inline">|</span> <a href="https://github.com/zacharyellison"><u>Github</u></a> <span class="math inline">|</span> <a href="https://calendly.com/zach-r-ellison/intro-call"><u>Schedule</u></a> <span class="math inline">|</span> <a href="mailto:zach.r.ellison@gmail.com.com"><u>zach.r.ellison@gmail.com</u></a></p>
-</div>
-<h1 id="section"></h1>
-<p>I am a father, a fixer, a tinkerer. I create things that bring me joy. I try to be of help to others.</p>
-<p>I like to work with Python, explore data, and tell stories.</p>
-<p>I have experience <em>automating, analyzing,</em> and <em>optimizing</em>.</p>
-<h1 id="experience">Experience</h1>
-<ul>
-<li><table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Software Engineer</strong></td>
-<td style="text-align: right;">September 2022 – Present</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><em>Notable Health</em></td>
-<td style="text-align: right;"><em>Remote, San Francisco, CA</em></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p><span> <span>Led efforts on coding best practices for internal tools and code library use </span> </span></p></li>
-<li><p><span> <span>Onboarded and Managed team of 5 contractors </span> </span></p></li>
-<li><p><span> <span>Mentored peers regarding solutions and code patterns </span> </span></p></li>
-<li><p><span> <span>Integrated web payor portals and external tooling to ingest and export HIPAA data </span> </span></p></li>
-<li><p><span> <span><strong>Tech</strong>: Google Cloud Platform, Typescript, Selenium, Python, Jenkins, Concourse, SQL, Docker, Jest </span> </span></p></li>
-</ul></li>
-<li><table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Software Engineer</strong></td>
-<td style="text-align: right;">January 2022 – August 2022</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><em>Zagaran Inc</em></td>
-<td style="text-align: right;"><em>Boston, MA</em></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p><span> <span>Optimized Database ingestion and queries, improving algorithm performance by 300% </span> </span></p></li>
-<li><p><span> <span>Executed code base restructure with React and Django as sole architect </span> </span></p></li>
-<li><p><span> <span><strong>Tech</strong>: Django, Python3, Numpy, Postgres, Pandas, Angular, React, VueJS, Node.JS, AWS </span> </span></p></li>
-</ul></li>
-<li><table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Software Engineer in Test</strong></td>
-<td style="text-align: right;">March 2021 – January 2022</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><em>EzeSoft, SS&amp;C</em></td>
-<td style="text-align: right;"><em>Remote, Boston, MA</em></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p><span> <span>Spearheaded K8s performance testing framework, presenting to peers and reports </span> </span></p></li>
-<li><p><span> <span>Integrated data architecture framework as source of truth for TDD </span> </span></p></li>
-<li><p><span> <span>Led development on integration, unit tests </span> </span></p></li>
-<li><p><span> <span>Gathered business requirements to detail task development, acceptance criteria </span> </span></p></li>
-<li><p><span> <span><strong>Tech</strong>: C#, Node.JS, Jest, Jenkins, Jira, K8s, C++, Tableau, AWS </span> </span></p></li>
-</ul></li>
-<li><table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Data Scientist</strong></td>
-<td style="text-align: right;">September 2018 – September 2019</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><em>Activision</em></td>
-<td style="text-align: right;"><em>Boulder, CO</em></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p><span> <span>Presented 2 times on user engagement, sentiment to VPs of Treyarch </span> </span></p></li>
-<li><p><span> <span>Performed sentiment analysis of 600k users on live data </span> </span></p></li>
-<li><p><span> <span>Integrated data lake, ETL pipeline to ingest 18+ million posts with AWS, python, and kafka </span> </span></p></li>
-<li><p><span> <span>Developed internal web tool for user data management using React, Python, Flask </span> </span></p></li>
-<li><p><span> <span>Implemented multithreaded workers with python Celery, Redis </span> </span></p></li>
-<li><p><span> <span><strong>Tech</strong>: Python, Kafka, React, Celery, Redis, Spark, Kubernetes, Docker, AWS, MongoDB, SQL, Snowflake </span> </span></p></li>
-</ul></li>
-</ul>
-<h1 id="education">Education</h1>
-<ul>
-<li><table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Harvard University</strong></td>
-<td style="text-align: right;">2021</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><em>Bachelor of Arts in Computer Science</em></td>
-<td style="text-align: right;"><em>Cambridge, MA</em></td>
-</tr>
-</tbody>
-</table></li>
-</ul>
-<h1 id="projects">Projects</h1>
-<ul>
-<li><table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://github.com/ZacharyEllison/ZacharyEllison.github.io"><u><strong>Portfolio</strong></u></a> <span class="math inline">|</span> <em>Git, Github Pages, Ruby, Jekyll</em> <span class="math inline">|</span> <a href="https://zacharyellison.com"><u>ZacharyEllison.com</u></a></td>
-<td style="text-align: right;">Fall 2019</td>
-</tr>
-</tbody>
-</table></li>
-<li><table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://github.com/ZacharyEllison/matrices"><u><strong>Matrices</strong></u></a> <span class="math inline">|</span> <em>Python, Linear Algebra</em></td>
-<td style="text-align: right;">Spring 2018</td>
-</tr>
-</tbody>
-</table></li>
-<li><table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://github.com/ZacharyEllison/lylwm"><u><strong>Simple Cloud Storage</strong></u></a> <span class="math inline">|</span> <em>Python, Flask, MongoDB, Heroku, Oracle</em></td>
-<td style="text-align: right;">Winter 2017</td>
-</tr>
-</tbody>
-</table></li>
-</ul>
-<h1 id="technical-skills">Technical Skills</h1>
-<div class="itemize">
-<p><span> <strong>Languages</strong><span>: Python, C/C++, Java, SQL, JavaScript, Typescript, HTML/CSS, Lua, OCamL, LaTeX, Bash</span><br />
-<strong>Databases</strong><span>: Postgres, MSSQL, MySQL, Redshift, MongoDB, Elasticsearch</span><br />
-<strong>Frameworks</strong><span>: React, Node.js, Flask, JUnit, Django, Jest, Material-UI, FastAPI, Selenium</span><br />
-<strong>Developer Tools</strong><span>: Git, Docker, TravisCI, CircleCI, Google Cloud Platform, Kubernetes, AWS, S3, IAM, Azure</span><br />
-<strong>Libraries</strong><span>: pandas, NumPy, Matplotlib, D3.js, SciPy, boto3, moment.js</span><br />
-<strong>Interests</strong><span>: Reading short stories, going on long runs, baking sourdough</span> </span></p>
-</div>
+  <div class="cv-shell">
+    <div class="cv-actions" aria-label="Resume actions">
+      <button class="cv-action" type="button" onclick="window.print()">Print / Save PDF</button>
+    </div>
+
+    <main class="cv-page">
+      <header class="cv-header">
+        <h1 class="cv-name">Zachary Ellison</h1>
+        <div class="cv-contact-row">
+          <span>|</span>
+          <a href="https://zacharyellison.net">zacharyellison.net</a>
+          <span>|</span>
+          <a href="https://linkedin.com/in/zachary-ellison">LinkedIn</a>
+          <span>|</span>
+          <a href="https://github.com/zacharyellison">Github</a>
+          <span>|</span>
+          <a href="https://calendly.com/zach-r-ellison/intro-call">Calendly</a>
+          <span>|</span>
+        </div>
+        <div class="cv-contact-row">
+          <span>|</span>
+          <a href="mailto:zach.r.ellison@gmail.com">zach.r.ellison@gmail.com</a>
+          <span>|</span>
+          <span>720-333-0012</span>
+          <span>|</span>
+          <span>Boston MA, 02135</span>
+          <span>|</span>
+        </div>
+      </header>
+
+      <section class="cv-section" aria-labelledby="education">
+        <h2 class="cv-section-title" id="education">Education</h2>
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <div class="cv-entry-title">Harvard University</div>
+            <div class="cv-entry-date">Class of 2020</div>
+          </div>
+          <div class="cv-entry-subheader">
+            <div>Bachelor of Arts in Computer Science</div>
+            <div>Cambridge, MA</div>
+          </div>
+        </article>
+      </section>
+
+      <section class="cv-section" aria-labelledby="experience">
+        <h2 class="cv-section-title" id="experience">Experience</h2>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <div class="cv-entry-title">Senior Backend Engineer</div>
+            <div class="cv-entry-date">September 2024 -- Present</div>
+          </div>
+          <div class="cv-entry-subheader">
+            <div>Ribbiot</div>
+            <div>Remote</div>
+          </div>
+          <ul class="cv-item-list">
+            <li>Architected backend services, APIs, and data models for an industrial operations platform, supporting scalable workflows for enterprise clients.</li>
+            <li>Optimized CI/CD pipelines in collaboration with DevOps, reducing deployment failures by 35% and speeding delivery cycles.</li>
+            <li>Designed modular job and task management workflows, enabling rapid client-specific customization without code changes.</li>
+            <li><strong>Tech</strong>: AWS, Serverless, Typescript, GraphQL, GitHub Actions, CircleCI, DataDog, SQL, Docker</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <div class="cv-entry-title">Software Engineer</div>
+            <div class="cv-entry-date">September 2022 -- September 2024</div>
+          </div>
+          <div class="cv-entry-subheader">
+            <div>Notable</div>
+            <div>Remote</div>
+          </div>
+          <ul class="cv-item-list">
+            <li>Automated healthcare administration tasks using Python computer vision, reducing manual processing by 60%.</li>
+            <li>Led a team of 5 contractors, improving iteration speed and task reliability across automation projects.</li>
+            <li>Directed decisions on code quality and architectural patterns, resulting in 40% fewer review corrections.</li>
+            <li>Built integrations for web payor portals using Python, Typescript, and GCP, ensuring HIPAA-compliant data ingestion.</li>
+            <li><strong>Tech</strong>: GCP, Typescript, Selenium, Python, Jenkins, Concourse, SQL, Docker, Jest</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <div class="cv-entry-title">Software Engineer</div>
+            <div class="cv-entry-date">January 2022 -- August 2022</div>
+          </div>
+          <div class="cv-entry-subheader">
+            <div>Zagaran Inc</div>
+            <div>Boston, MA</div>
+          </div>
+          <ul class="cv-item-list">
+            <li>Refactored Django codebase, improving scalability and maintainability across multiple applications.</li>
+            <li>Optimized database ingestion and querying, achieving 3x performance improvement.</li>
+            <li><strong>Tech</strong>: Django, Python3, Numpy, Postgres, Pandas, Angular, React, Node.js, AWS</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <div class="cv-entry-title">Software Engineer in Test</div>
+            <div class="cv-entry-date">March 2021 -- January 2022</div>
+          </div>
+          <div class="cv-entry-subheader">
+            <div>EzeSoft, SS&amp;C</div>
+            <div>Remote / Boston, MA</div>
+          </div>
+          <ul class="cv-item-list">
+            <li>Developed a Kubernetes-based performance testing framework, providing actionable insights to stakeholders.</li>
+            <li>Introduced a data architecture framework to support test-driven development, improving test coverage by 50%.</li>
+            <li>Owned integration and unit test development across services, ensuring higher code reliability.</li>
+            <li><strong>Tech</strong>: C#, Node.js, Jest, Jenkins, Jira, Kubernetes, C++, Tableau, AWS</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-header">
+            <div class="cv-entry-title">Data Scientist</div>
+            <div class="cv-entry-date">September 2018 -- September 2019</div>
+          </div>
+          <div class="cv-entry-subheader">
+            <div>Activision</div>
+            <div>Boulder, CO</div>
+          </div>
+          <ul class="cv-item-list">
+            <li>Performed sentiment analysis on 600k+ users, informing product decisions and marketing strategies.</li>
+            <li>Built ETL pipelines processing 18M+ posts with Python, Kafka, and AWS, reducing data latency by 70%.</li>
+            <li>Developed internal analytics tools using React and Flask, improving data exploration efficiency.</li>
+            <li>Implemented multithreaded workers using Celery and Redis to process high-volume datasets reliably.</li>
+            <li><strong>Tech</strong>: Python, Kafka, React, Celery, Redis, Spark, Kubernetes, Docker, AWS, MongoDB, SQL, Snowflake</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section" aria-labelledby="technical-skills">
+        <h2 class="cv-section-title" id="technical-skills">Technical Skills</h2>
+        <div class="cv-skills">
+          <div class="cv-skill-row"><span class="cv-skill-label">Languages</span>: Typescript, Python, C/C++, Java, SQL, JavaScript, Node.js, React, Bash</div>
+          <div class="cv-skill-row"><span class="cv-skill-label">Databases</span>: Postgres, MSSQL, MySQL, Redshift, MongoDB, Elasticsearch</div>
+          <div class="cv-skill-row"><span class="cv-skill-label">Architecture</span>: Microservices, Serverless systems, Event-driven Workflows, CRUD APIs</div>
+          <div class="cv-skill-row"><span class="cv-skill-label">Libraries</span>: Flask, Django, Prisma ORM, Jest, PyTest, GraphQL, Selenium, Pandas, NumPy, scipy</div>
+          <div class="cv-skill-row"><span class="cv-skill-label">Developer Tools</span>: Git, Docker, CircleCI, Kubernetes, AWS, GCP, S3, IAM, Jenkins, claude code, opencode, roo, cline, QWEN, Codex</div>
+          <div class="cv-skill-row"><span class="cv-skill-label">Interests</span>: Backend systems design, cloud architecture, data engineering, AR/VR hobby projects, lifting, running, and yoga, sourdough baking</div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

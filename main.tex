@@ -1,5 +1,6 @@
 \documentclass[letterpaper,11pt]{article}
 
+\setlength{\footskip}{5pt}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -9,24 +10,15 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\setlength{\footskip}{5pt}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 
-
 %----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-\usepackage{charter}
-
+\usepackage[sfdefault]{FiraSans}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -49,10 +41,8 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -91,137 +81,97 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Zachary Ellison} \\ \vspace{1pt}
-    \small \href{https://zacharyellison.com}{\underline{Bio}} $|$ 
+    \small $|$ \href{https://zacharyellison.net}{\underline{zacharyellison.net}} $|$ 
     \href{https://linkedin.com/in/zachary-ellison}{\underline{LinkedIn}} $|$
     \href{https://github.com/zacharyellison}{\underline{Github}} $|$
-    \href{https://calendly.com/zach-r-ellison/intro-call}{\underline{Schedule}} $|$ \href{mailto:zach.r.ellison@gmail.com.com}{\underline{zach.r.ellison@gmail.com}}
+    \href{https://calendly.com/zach-r-ellison/intro-call}{\underline{Calendly}} $|$ \\
+    $|$ \href{mailto:zach.r.ellison@gmail.com}{\underline{zach.r.ellison@gmail.com}} $|$ 
+    720-333-0012 $|$
+    {Boston MA, 02135} $|$
 \end{center}
-
-
-%-----------Objective-----------
-\section{} \vspace{1pt}
-% \begin{center}
-%     hello
-% \end{center}
-I am a father, a fixer, a tinkerer. I create things that bring me joy. I try to be of help to others.
-
-I like to work with Python, explore data, and tell stories.
-
-I have experience \textit{automating, analyzing,} and \textit{optimizing}.
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Software Engineer}{September 2022 -- Present}
-      {Notable Health}{Remote, San Francisco, CA}
-      \resumeItemListStart
-        \resumeItem{Led efforts on coding best practices for internal tools and code library use}
-        \resumeItem{Onboarded and Managed team of 5 contractors}
-        \resumeItem{Mentored peers regarding solutions and code patterns}
-        \resumeItem{Integrated web payor portals and external tooling to ingest and export HIPAA data}
-        \resumeItem{\textbf{Tech}: Google Cloud Platform, Typescript, Selenium, Python, Jenkins, Concourse, SQL, Docker, Jest}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {Software Engineer}{January 2022 -- August 2022}
-      {Zagaran Inc}{Boston, MA}
-      \resumeItemListStart
-        \resumeItem{Optimized Database ingestion and queries, improving algorithm performance by 300\%}
-        \resumeItem{Executed code base restructure with React and Django as sole architect}
-        \resumeItem{\textbf{Tech}: Django, Python3, Numpy, Postgres, Pandas, Angular, React, VueJS, Node.JS, AWS}
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Software Engineer in Test}{March 2021 -- January 2022}
-      {EzeSoft, SS\&C}{Remote, Boston, MA}
-      \resumeItemListStart
-        \resumeItem{Spearheaded K8s performance testing framework, presenting to peers and reports}
-        \resumeItem{Integrated data architecture framework as source of truth for TDD}
-        \resumeItem{Led development on integration, unit tests}
-        \resumeItem{Gathered business requirements to detail task development, acceptance criteria}
-        \resumeItem{\textbf{Tech}: C\#, Node.JS, Jest, Jenkins, Jira, K8s, C++, Tableau, AWS}
-      \resumeItemListEnd
- 
-    \resumeSubheading
-      {Data Scientist}{September 2018 -- September 2019}
-      {Activision}{Boulder, CO}
-      \resumeItemListStart
-        \resumeItem{Presented 2 times on user engagement, sentiment to VPs of Treyarch}
-        \resumeItem{Performed sentiment analysis of 600k users on live data}
-        \resumeItem{Integrated data lake, ETL pipeline to ingest 18+ million posts with AWS, python, and kafka}
-        \resumeItem{Developed internal web tool for user data management using React, Python, Flask}
-        \resumeItem{Implemented multithreaded workers with python Celery, Redis}
-        \resumeItem{\textbf{Tech}: Python, Kafka, React, Celery, Redis, Spark, Kubernetes, Docker, AWS, MongoDB, SQL, Snowflake}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Harvard University}{2021}
+      {Harvard University}{Class of 2020}
       {Bachelor of Arts in Computer Science}{Cambridge, MA}
   \resumeSubHeadingListEnd
 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      % \resumeProjectHeading
-      %     {\textbf{Budget} $|$ \emph{JavaScript, Oracle Cloud} $|$ \href{https://budget.zacharyellison.com}{\underline{budget.ZacharyEllison.com}}}{Spring 2021}
-      % \resumeProjectHeading
-      %     {\textbf{Wiki} $|$ \emph{Python, Git, Oracle Cloud} $|$ \href{https://wiki.zacharyellison.com}{\underline{wiki.ZacharyEllison.com}}}{Summer 2020}
-      \resumeProjectHeading
-          {\href{https://github.com/ZacharyEllison/ZacharyEllison.github.io}{\underline{\textbf{Portfolio}}} $|$ \emph{Git, Github Pages, Ruby, Jekyll} $|$ \href{https://zacharyellison.com}{\underline{ZacharyEllison.com}}}{Fall 2019}
+    \resumeSubheading
+      {Senior Backend Engineer}{September 2024 -- Present}
+      {Ribbiot}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected backend services, APIs, and data models for an industrial operations platform, supporting scalable workflows for enterprise clients.}
+        \resumeItem{Optimized CI/CD pipelines in collaboration with DevOps, reducing deployment failures by 35\% and speeding delivery cycles.}
+        \resumeItem{Designed modular job and task management workflows, enabling rapid client-specific customization without code changes.}
+        \resumeItem{\textbf{Tech}: AWS, Serverless, Typescript, GraphQL, GitHub Actions, CircleCI, DataDog, SQL, Docker}
+      \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\href{https://github.com/ZacharyEllison/matrices}{\underline{\textbf{Matrices}}} $|$ \emph{Python, Linear Algebra}} {Spring 2018}
-          
-      \resumeProjectHeading
-      {\href{https://github.com/ZacharyEllison/lylwm}{\underline{\textbf{Simple Cloud Storage}}} $|$ \emph{Python, Flask, MongoDB, Heroku, Oracle}}{Winter 2017}
-      
-          
-    \resumeSubHeadingListEnd
+    \resumeSubheading
+      {Software Engineer}{September 2022 -- September 2024}
+      {Notable}{Remote}
+      \resumeItemListStart
+        \resumeItem{Automated healthcare administration tasks using Python computer vision, reducing manual processing by 60\%.}
+        \resumeItem{Led a team of 5 contractors, improving iteration speed and task reliability across automation projects.}
+        \resumeItem{Directed decisions on code quality and architectural patterns, resulting in 40\% fewer review corrections.}
+        \resumeItem{Built integrations for web payor portals using Python, Typescript, and GCP, ensuring HIPAA-compliant data ingestion.}
+        \resumeItem{\textbf{Tech}: GCP, Typescript, Selenium, Python, Jenkins, Concourse, SQL, Docker, Jest}
+      \resumeItemListEnd
 
+    \resumeSubheading
+      {Software Engineer}{January 2022 -- August 2022}
+      {Zagaran Inc}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Refactored Django codebase, improving scalability and maintainability across multiple applications.}
+        \resumeItem{Optimized database ingestion and querying, achieving 3x performance improvement.}
+        \resumeItem{\textbf{Tech}: Django, Python3, Numpy, Postgres, Pandas, Angular, React, Node.js, AWS}
+      \resumeItemListEnd
 
+    \resumeSubheading
+      {Software Engineer in Test}{March 2021 -- January 2022}
+      {EzeSoft, SS\&C}{Remote / Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Developed a Kubernetes-based performance testing framework, providing actionable insights to stakeholders.}
+        \resumeItem{Introduced a data architecture framework to support test-driven development, improving test coverage by 50\%.}
+        \resumeItem{Owned integration and unit test development across services, ensuring higher code reliability.}
+        \resumeItem{\textbf{Tech}: C\#, Node.js, Jest, Jenkins, Jira, Kubernetes, C++, Tableau, AWS}
+      \resumeItemListEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
+    \resumeSubheading
+      {Data Scientist}{September 2018 -- September 2019}
+      {Activision}{Boulder, CO}
+      \resumeItemListStart
+        \resumeItem{Performed sentiment analysis on 600k+ users, informing product decisions and marketing strategies.}
+        \resumeItem{Built ETL pipelines processing 18M+ posts with Python, Kafka, and AWS, reducing data latency by 70\%.}
+        \resumeItem{Developed internal analytics tools using React and Flask, improving data exploration efficiency.}
+        \resumeItem{Implemented multithreaded workers using Celery and Redis to process high-volume datasets reliably.}
+        \resumeItem{\textbf{Tech}: Python, Kafka, React, Celery, Redis, Spark, Kubernetes, Docker, AWS, MongoDB, SQL, Snowflake}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C/C++, Java, SQL, JavaScript, Typescript, HTML/CSS, Lua, OCamL, LaTeX, Bash} \\
+     \textbf{Languages}{: Typescript, Python, C/C++, Java, SQL, JavaScript, Node.js, React, Bash} \\
      \textbf{Databases}{: Postgres, MSSQL, MySQL, Redshift, MongoDB, Elasticsearch} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, Django, Jest, Material-UI, FastAPI, Selenium} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, CircleCI, Google Cloud Platform, Kubernetes, AWS, S3, IAM, Azure} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, D3.js, SciPy, boto3, moment.js} \\
-     \textbf{Interests}{: Reading short stories, going on long runs, baking sourdough}
+     \textbf{Architecture}{: Microservices, Serverless systems, Event-driven Workflows, CRUD APIs} \\
+     \textbf{Libraries}{: Flask, Django, Prisma ORM, Jest, PyTest, GraphQL, Selenium, Pandas, NumPy, scipy} \\
+     \textbf{Developer Tools}{: Git, Docker, CircleCI, Kubernetes, AWS, GCP, S3, IAM, Jenkins, claude code, opencode, roo, cline, QWEN, Codex} \\
+     \textbf{Interests}{: Backend systems design, cloud architecture, data engineering, AR/VR hobby projects, lifting, running, and yoga, sourdough baking}
     }}
  \end{itemize}
 
-
-%-------------------------------------------
 \end{document}
