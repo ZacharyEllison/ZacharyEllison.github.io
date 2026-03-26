@@ -16,9 +16,9 @@ He even got out of bed this morning.
 
 ## Getting Started
 
-I am rebuilding this site _again_ since I stopped in 2018, using the [cvless](https://github.com/piazzai/cvless) jekyll theme and [github pages](https://pages.github.com/)
+I rebuilt this site using the [cvless](https://github.com/piazzai/cvless) jekyll theme and [github pages](https://pages.github.com/)
 
-This time, the difference is in the soul purpose. Before, I thought I needed to. Now, I **want** to. I plan to use this platform for presenting things I write.
+I post writings from my notes here, and occasionally will link to my other work. Even thinking I'll add recipes!
 
 ___
 
