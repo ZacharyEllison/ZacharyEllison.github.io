@@ -3,8 +3,8 @@
 title: Zachary Ellison
 description: An online CV and a place to publish my writing, to appease my inner spirits
 taglong: Putting words places
-tagshort: scholar, father, fixer 
-# url: zacharyellison.com
+tagshort: scholar, father, fixer
+# url: zacharyellison.net
 baseurl: ""
 permalink: pretty
 repo: https://github.com/zacharyellison/zacharyellison.github.io
@@ -13,7 +13,7 @@ repo: https://github.com/zacharyellison/zacharyellison.github.io
 
 author:
   name: Zachary Ellison
-  email: zachary@zacharyellison.com
+  email: z@zacharyellison.net
 photo: /assets/photo.jpg
 
 # build settings
