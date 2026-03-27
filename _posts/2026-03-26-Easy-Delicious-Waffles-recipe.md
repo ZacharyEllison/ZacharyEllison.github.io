@@ -13,15 +13,15 @@ project: true
 ## Ingredients
 > makes about 16 dash sized waffles
 
-240g or 2 cups bread flour (all-purpose is fine too)
-50g or 1/4 cup granulated sugar
-53g or 1/4 cup brown sugar
-12g or 1 tablespoon baking powder
-7g or ½ teaspoon salt
-2 large eggs (100g)
-2 cups milk (227g)
-57g or ½ cup unsalted butter melted
-4g or 1 teaspoon vanilla extract
+- [ ] 240g or 2 cups bread flour (all-purpose is fine too)
+- [ ] 50g or 1/4 cup granulated sugar
+- [ ] 53g or 1/4 cup brown sugar
+- [ ] 12g or 1 tablespoon baking powder
+- [ ] 7g or ½ teaspoon salt
+- [ ] 2 large eggs (100g)
+- [ ] 2 cups milk (227g)
+- [ ] 57g or ½ cup unsalted butter melted
+- [ ] 4g or 1 teaspoon vanilla extract
 
 ## Directions
 - preheat your waffle iron, I like smaller ones but Belgium works too, just fewer per batch
