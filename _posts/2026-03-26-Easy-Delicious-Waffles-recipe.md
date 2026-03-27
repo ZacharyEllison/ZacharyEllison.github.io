@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Easy Delicious Waffles (recipe)"
+title:  "Easy Waffles From Scratch"
 date: 2026-03-26
-lead: "my go to for weekends, making in batch so kids can toast during the week"
+lead: "my go-to for weekends, making them in batch helps kids have breakfast during the week"
 project: true
 # tag:
 # -   writing
@@ -20,14 +20,15 @@ project: true
 - [ ] 7g or ½ teaspoon salt
 - [ ] 2 large eggs (100g)
 - [ ] 2 cups milk (227g)
-- [ ] 57g or ½ cup unsalted butter melted
+- [ ] 57g or ½ cup oil (I use olive oil)
 - [ ] 4g or 1 teaspoon vanilla extract
 
 ## Directions
-- preheat your waffle iron, I like smaller ones but Belgium works too, just fewer per batch
+- preheat your waffle iron, I like smaller ones. 
+    - A belgium waffle iron works though you will result in much fewer per batch, like 4:1
 - In one bowl mix the dry ingredients minus the sugar
 - In another cream the sugar into the butter and mix in the wet ingredients
 - Combine the dry into wet without overmixing
 - Dollop about 1/4 cup batter onto waffle iron
 - When removing, let them cool on a wire rack to avoid sogginess
-- eat fresh or Freeze without squeezing out the air so they can separate and toast from frozen
+- eat fresh or freeze without squeezing out the air so they can separate
