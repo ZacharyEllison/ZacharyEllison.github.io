@@ -13,6 +13,8 @@ This is the homepage for my portfolio and blog.
  
  Feel free to contact me by [email](mailto:zach.r.ellison@gmail.com).
 
+ I maintain my rights to my image and likeness. The code otherwise is subject to MIT, see [LICENSE](./LICENSE)
+
  
  
  
