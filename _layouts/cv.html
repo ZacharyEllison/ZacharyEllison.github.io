@@ -180,7 +180,7 @@
       font-weight: 600;
     }
 
-    @media (max-width: 720px) {
+    @media screen and (max-width: 720px) {
       .cv-shell {
         padding: 1rem 0.75rem 1.5rem;
       }
@@ -236,6 +236,16 @@
         box-shadow: none;
       }
 
+      .cv-contact-row {
+        white-space: nowrap;
+      }
+
+      .cv-entry-header,
+      .cv-entry-subheader {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 0.8rem;
+      }
+
       a {
         text-decoration-thickness: 0.04em;
       }
@@ -245,7 +255,7 @@
 <body>
   <div class="cv-shell">
     <div class="cv-actions" aria-label="Resume actions">
-      <button class="cv-action" type="button" onclick="window.print()">Print / Save PDF</button>
+      <a class="cv-action" href="{{ '/cv.pdf' | relative_url }}" download>Download PDF</a>
     </div>
 
     <main class="cv-page">
