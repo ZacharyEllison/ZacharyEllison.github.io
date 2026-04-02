@@ -226,4 +226,3 @@ Put the loaf in the oven on the middle-ish rack, and bake for 25-30 minutes. Rem
 Take your bread out, and if you can, let it cool _all the way_. 
 
 Enjoy!
-
