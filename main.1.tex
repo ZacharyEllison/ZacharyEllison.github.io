@@ -1,0 +1,191 @@
+\documentclass[letterpaper,11pt]{article}
+
+\setlength{\footskip}{5pt}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\footskip}{5pt}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+%----------FONT OPTIONS----------
+\usepackage[sfdefault]{FiraSans}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Zachary Ellison} \\ \vspace{1pt}
+    \small $|$ \href{https://zacharyellison.net}{\underline{zacharyellison.net}} $|$ 
+    \href{https://linkedin.com/in/zachary-ellison}{\underline{LinkedIn}} $|$
+    \href{https://github.com/zacharyellison}{\underline{Github}} $|$
+    \href{https://calendly.com/zach-r-ellison/intro-call}{\underline{Calendly}} $|$ \\
+    $|$ \href{mailto:zach.r.ellison@gmail.com}{\underline{zach.r.ellison@gmail.com}} $|$ 
+    720-333-0012 $|$
+    {Boston MA, 02135} $|$
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harvard University}{Class of 2020, graduated 2021}
+      {Bachelor of Arts in Computer Science}{Cambridge, MA}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Backend Engineer}{September 2024 -- Present}
+      {Ribbiot}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected, designed, and delivered scalable backend services, RESTful APIs, and data models for an industrial operations platform, directly supporting enterprise client workflows.}
+        \resumeItem{Optimized CI/CD pipelines in collaboration with DevOps, reducing deployment failures by 35\% and speeding delivery cycles.}
+        \resumeItem{Architected and deployed modular job and task management workflows, enabling rapid client-specific customization through configuration instead of code changes.}
+        \resumeItem{Owned the job and task product end-to-end without a PM — gathered client requirements, prioritized the roadmap, and shipped iterative releases.}
+        \resumeItem{\textbf{Tech}: AWS, Serverless, Typescript, GraphQL, Playwright, GitHub Actions, CircleCI, DataDog, SQL, Docker}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{September 2022 -- September 2024}
+      {Notable}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed Python and Playwright based computer vision solutions to automate healthcare administration, reducing manual processing by 60\% and enabling scalable task management.}
+        \resumeItem{Led a team of 5 contractors, improving iteration speed and task reliability across automation projects.}
+        \resumeItem{Directed decisions on code quality and architectural patterns, resulting in 40\% fewer review corrections.}
+        \resumeItem{Built integrations for web payor portals using Python, Playwright, Typescript, and GCP, ensuring HIPAA-compliant data ingestion.}
+        \resumeItem{\textbf{Tech}: GCP, Typescript, Playwright, Selenium, Python, Jenkins, Concourse, SQL, Docker, Jest}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{January 2022 -- August 2022}
+      {Zagaran Inc}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Refactored Django codebase, improving scalability and maintainability across multiple applications.}
+        \resumeItem{Optimized database ingestion and querying, achieving 3x performance improvement.}
+        \resumeItem{\textbf{Tech}: Django, Python3, Numpy, Postgres, Pandas, Angular, React, Node.js, AWS}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer in Test}{March 2021 -- January 2022}
+      {EzeSoft, SS\&C}{Remote / Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Developed a Kubernetes-based performance testing framework, providing actionable insights to stakeholders.}
+        \resumeItem{Introduced a data architecture framework to support test-driven development, improving test coverage by 50\%.}
+        \resumeItem{Owned integration and unit test development across services, ensuring higher code reliability.}
+        \resumeItem{\textbf{Tech}: C\#, Node.js, Jest, Jenkins, Jira, Kubernetes, C++, Tableau, AWS}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Scientist}{September 2018 -- September 2019}
+      {Activision}{Boulder, CO}
+      \resumeItemListStart
+        \resumeItem{Performed sentiment analysis on 600k+ users, informing product decisions and marketing strategies.}
+        \resumeItem{Built ETL pipelines processing 18M+ posts with Python, Kafka, and AWS, reducing data latency by 70\%.}
+        \resumeItem{Developed internal analytics tools using React and Flask, improving data exploration efficiency.}
+        \resumeItem{Implemented multithreaded workers using Celery and Redis to process high-volume datasets reliably.}
+        \resumeItem{\textbf{Tech}: Python, Kafka, React, Celery, Redis, Spark, Kubernetes, Docker, AWS, MongoDB, SQL, Snowflake}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{open-agents} $|$ \emph{TypeScript, Rust, Bun, Local LLMs} $|$ \href{https://github.com/ZacharyEllison/open-agents}{\underline{GitHub}}}{June 2026}
+      \resumeItemListStart
+        \resumeItem{Forked oh-my-pi into a fully local-first coding agent harness — no accounts, API keys, or telemetry; ships a developer-facing CLI with 40+ tools and OpenAI-compatible runtime discovery.}
+        \resumeItem{Architected a 3-tier model system (interface/worker/compactor) for small-model-first agent orchestration, delegating heavy reasoning and code edits to worker models via structured tool calls.}
+        \resumeItem{Built on TypeScript and Rust N-API natives (grep, shell, AST, LSP, browser fetch) for in-process agent tooling with sub-100ms hot-path performance.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Typescript, Python, C/C++, Java, SQL, JavaScript, Node.js, React, Bash, Rust} \\
+     \textbf{Databases}{: Postgres, MSSQL, MySQL, Redshift, MongoDB, Elasticsearch} \\
+     \textbf{Architecture}{: Microservices, Serverless systems, Event-driven Workflows, REST APIs, Browser automation, AI agent tooling} \\
+     \textbf{Libraries}{: Playwright, Puppeteer, Flask, Django, Prisma ORM, Jest, PyTest, GraphQL, Selenium, Pandas, NumPy, scipy} \\
+     \textbf{Developer Tools}{: Git, Docker, CircleCI, Kubernetes, AWS, GCP, S3, IAM, Jenkins, DataDog, Sentry} \\
+     \textbf{AI \& Agents}{: Claude Opus 4.6, Codex, Claude Code, pi-coding-agent, Qwen 3.6, Gemma 4, atomic-chat, OpenTelemetry} \\
+     \textbf{Interests}{: Godot 4.6, AR/VR hobby projects, lifting, running, yoga, sourdough baking}
+    }}
+ \end{itemize}
+
+\end{document}
