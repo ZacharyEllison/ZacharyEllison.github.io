@@ -81,15 +81,21 @@
 
 .particles-icon--games {
   position: relative;
-  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  vertical-align: middle;
 
   &::before {
     content: "";
     position: absolute;
-    inset: -0.35em;
+    top: 50%;
+    left: 50%;
+    width: 2.75em;
+    height: 2.75em;
     border-radius: 50%;
     background: conic-gradient(
-      from var(--games-rainbow-angle, 0deg),
       #ff3366,
       #ff9933,
       #ffee33,
@@ -100,56 +106,29 @@
     );
     filter: blur(0.45em);
     opacity: 0.75;
-    z-index: -1;
+    z-index: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
     animation: games-rainbow-spin 3.5s linear infinite;
+    will-change: transform;
   }
 
   svg {
-    animation: games-rainbow-glow 3.5s linear infinite;
+    position: relative;
+    z-index: 1;
   }
 
   &:focus,
   &:hover {
     &::before {
       opacity: 0.95;
-      filter: blur(0.55em);
     }
   }
 }
 
-@property --games-rainbow-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
 @keyframes games-rainbow-spin {
   to {
-    --games-rainbow-angle: 360deg;
-  }
-}
-
-@keyframes games-rainbow-glow {
-  0% {
-    filter: drop-shadow(0 0 0.25em #ff3366) drop-shadow(0 0 0.55em #ff336699);
-  }
-  16% {
-    filter: drop-shadow(0 0 0.25em #ff9933) drop-shadow(0 0 0.55em #ff993399);
-  }
-  33% {
-    filter: drop-shadow(0 0 0.25em #ffee33) drop-shadow(0 0 0.55em #ffee3399);
-  }
-  50% {
-    filter: drop-shadow(0 0 0.25em #33ff88) drop-shadow(0 0 0.55em #33ff8899);
-  }
-  66% {
-    filter: drop-shadow(0 0 0.25em #33bbff) drop-shadow(0 0 0.55em #33bbff99);
-  }
-  83% {
-    filter: drop-shadow(0 0 0.25em #aa55ff) drop-shadow(0 0 0.55em #aa55ff99);
-  }
-  100% {
-    filter: drop-shadow(0 0 0.25em #ff3366) drop-shadow(0 0 0.55em #ff336699);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
